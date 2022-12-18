@@ -15,14 +15,25 @@ int m =3;
 
 for (int j = 0; j < size; j++)
 {
-    if(input[j]<=m)
+    if(input[j].Length<=m)
     {
-        output[n]=input[j];
+       output[n]=input[j];
         n++;
     }
 }
 Console.WriteLine();
 
+PrintArray(output);
+
+
+void PrintArray(string [] array)
+{
+for (int i = 0; i< array.Length; i++)
+{
+    Console.Write(array[i]+" ");
+}
+Console.WriteLine();
+}
 
 
 
